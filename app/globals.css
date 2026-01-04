@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.04), transparent 25%),
+              radial-gradient(circle at 80% 0%, rgba(11, 26, 48, 0.35), transparent 30%),
+              #000C1F;
+  color: #F8F9FA;
+  min-height: 100vh;
+}
+
+a {
+  @apply text-gold hover:text-white transition-colors;
+}
+
+.glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-lg;
+}
+
+.button-primary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-gold to-yellow-400 text-midnight font-semibold shadow-glow transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+.button-secondary {
+  @apply inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold text-gold hover:text-midnight hover:bg-gold transition duration-200;
+}
+
+.section {
+  @apply relative py-16 sm:py-24 px-4 sm:px-8 lg:px-12;
+}
+
+.card {
+  @apply glass rounded-2xl p-6 border border-gold/20 shadow-lg shadow-gold/10;
+}
+
+.grid-overlay::before {
+  content: "";
+  @apply pointer-events-none absolute inset-0 opacity-20;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.6); border-radius: 9999px; }
