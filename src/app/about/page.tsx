@@ -22,7 +22,7 @@ export default function AboutPage() {
 
   return (
     <div className="space-y-10">
-      <MotionShell className="section-shell" id="resume">
+      <MotionShell className="section-shell">
         <div className="grid lg:grid-cols-5 gap-8 items-center">
           <div className="lg:col-span-2 relative">
             <div className="absolute inset-0 blur-3xl bg-gold-radial opacity-70" />
