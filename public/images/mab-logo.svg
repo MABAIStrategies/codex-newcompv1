@@ -1,0 +1,30 @@
+<svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MAB AI Strategies Logo</title>
+  <desc id="desc">Gold monogram with radiating particles on midnight gradient</desc>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D36B" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9F7A11" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.7" />
+      <stop offset="60%" stop-color="#0B1A30" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000C1F" stop-opacity="0.95" />
+    </radialGradient>
+  </defs>
+  <rect width="360" height="360" fill="#000C1F" />
+  <circle cx="180" cy="180" r="170" fill="url(#glow)" stroke="url(#gold)" stroke-width="4" />
+  <g fill="url(#gold)" fill-opacity="0.28">
+    <circle cx="68" cy="100" r="6" />
+    <circle cx="300" cy="120" r="5" />
+    <circle cx="120" cy="284" r="4" />
+    <circle cx="240" cy="268" r="7" />
+    <circle cx="180" cy="54" r="6" />
+    <circle cx="320" cy="210" r="4" />
+    <circle cx="44" cy="220" r="5" />
+  </g>
+  <circle cx="180" cy="180" r="110" fill="#0B1A30" stroke="url(#gold)" stroke-width="3" opacity="0.9" />
+  <text x="50%" y="52%" font-family="'Cinzel', 'Times New Roman', serif" font-size="84" fill="url(#gold)" text-anchor="middle" letter-spacing="8">MAB</text>
+  <text x="50%" y="64%" font-family="'Inter', 'Arial', sans-serif" font-size="18" fill="#F8F9FA" text-anchor="middle" letter-spacing="6">AI STRATEGIES</text>
+</svg>
