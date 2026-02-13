@@ -3,6 +3,11 @@
 import { useMemo, useState } from "react";
 import CTAButton from "@/components/ui/CTAButton";
 import MotionShell from "@/components/ui/MotionShell";
+import ROIShowcase from "@/components/ui/ROIShowcase";
+import PaymentActions from "@/components/ui/PaymentActions";
+import CalendarWidget from "@/components/ui/CalendarWidget";
+import LeadCaptureForm from "@/components/ui/LeadCaptureForm";
+import AISiteSparkLauncher from "@/components/ui/AISiteSparkLauncher";
 
 const solutionPrompts = [
   "Deploy an autonomous triage bot for inbound requests",
@@ -158,6 +163,21 @@ export default function HomePage() {
             </div>
           </div>
         ))}
+      </MotionShell>
+
+      <MotionShell>
+        <ROIShowcase />
+      </MotionShell>
+
+      <MotionShell className="grid lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 space-y-6">
+          <PaymentActions />
+          <CalendarWidget />
+        </div>
+        <div className="space-y-6">
+          <LeadCaptureForm />
+          <AISiteSparkLauncher />
+        </div>
       </MotionShell>
     </div>
   );

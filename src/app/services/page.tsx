@@ -3,6 +3,11 @@
 import { useEffect, useState } from "react";
 import CTAButton from "@/components/ui/CTAButton";
 import MotionShell from "@/components/ui/MotionShell";
+import ROIShowcase from "@/components/ui/ROIShowcase";
+import PaymentActions from "@/components/ui/PaymentActions";
+import CalendarWidget from "@/components/ui/CalendarWidget";
+import LeadCaptureForm from "@/components/ui/LeadCaptureForm";
+import AISiteSparkLauncher from "@/components/ui/AISiteSparkLauncher";
 
 const automationSlides = [
   {
@@ -128,8 +133,21 @@ export default function ServicesPage() {
               Every button routes to a live path—connect to automate, accelerate, or validate your AI decisions.
             </p>
             <CTAButton href="mailto:hello@mabaistrategies.com" label="Email Command" fullWidth />
-            <CTAButton href="/about#resume" label="View Credentials" fullWidth glow />
-          </div>
+          <CTAButton href="/about#resume" label="View Credentials" fullWidth glow />
+        </div>
+      </div>
+    </MotionShell>
+
+      <MotionShell>
+        <ROIShowcase />
+      </MotionShell>
+
+      <MotionShell className="grid lg:grid-cols-3 gap-6">
+        <PaymentActions />
+        <CalendarWidget />
+        <div className="space-y-6">
+          <LeadCaptureForm />
+          <AISiteSparkLauncher />
         </div>
       </MotionShell>
     </div>
